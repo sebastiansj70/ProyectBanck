@@ -1,10 +1,13 @@
-import { ACCOUNT_LIST, AccountActionTypes, SAVE_ACCOUNT } from '../../acciones/account/AccountActionTypes';
+import { ACCOUNT_LIST, AccountActionTypes, SAVE_ACCOUNT, SAVE_STATUS_LOGIN } from '../../acciones/account/AccountActionTypes';
 import { Account, DataAccount } from 'app/feature/Account/models/Account';
 import { EstadoAccount } from '../../modelo/EstadoAccount';
 
 const initialState: EstadoAccount = {
     accountLists: <Account>({}),
     account: <DataAccount>({}),
+    email: 'juan@example',
+    pass: '1234',
+    status: ''
 
 };
 
@@ -23,6 +26,13 @@ export default function (
             return {
                 ...state,
                 account: action.payload
+            };
+        }
+
+        case SAVE_STATUS_LOGIN: {
+            return {
+                ...state,
+                status: action.payload
             };
         }
 

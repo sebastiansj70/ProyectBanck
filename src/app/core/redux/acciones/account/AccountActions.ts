@@ -1,7 +1,8 @@
 import {
     ACCOUNT_LIST,
     AccountActionTypes,
-    SAVE_ACCOUNT
+    SAVE_ACCOUNT,
+    SAVE_STATUS_LOGIN
 } from './AccountActionTypes';
 import { Account, DataAccount } from 'app/feature/Account/models/Account';
 import { AccountRepository } from 'app/core/api/account.repositorio';
@@ -33,6 +34,15 @@ export function saveAccount(
 ): AccountActionTypes {
     return {
         type: SAVE_ACCOUNT,
+        payload: account
+    };
+}
+
+export function saveStatusLogin(
+    account: string
+): AccountActionTypes {
+    return {
+        type: SAVE_STATUS_LOGIN,
         payload: account
     };
 }

@@ -22,3 +22,9 @@ npm run test
 ```
 npm run lint
 ```
+
+### user to login
+```
+email: juan@example
+pass: 1234
+```

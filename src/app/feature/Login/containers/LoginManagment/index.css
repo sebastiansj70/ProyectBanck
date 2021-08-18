@@ -1,0 +1,114 @@
+.ContenedorLogin {
+    width: 95%;
+    height: 80%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentFrom {
+    width: 70vmin;
+    height: 60vmin;
+    background: #fff;
+    border-radius: 5vmin;
+    scrollbar-shadow-color: #000;
+    shadowopacity: 0.34;
+    shadowradius: 6.27;
+    elevation: 20;
+    border: rgba(145, 145, 145, 0.4) 0.1px solid;
+    box-shadow: -2px 6px 13px -7px rgba(0, 0, 0, 0.68);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contentImage {
+    width: 100%;
+    height: 15vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    resize: inherit;
+    margin-top: 1vmin;
+}
+
+.imgLogo {
+    width: 18vmin;
+    height: 15vmin;
+    object-fit: contain;
+}
+
+.tittleLogin {
+    font-size: 4vmin;
+}
+
+.contenedorInput {
+    width: 60vmin;
+    height: 10vmin;
+    display: flex;
+    flex-direction: column;
+    /* background-color: white; */
+    align-items: center;
+    margin-top: 4vmin;
+    /* box-shadow: -2px 6px 13px -7px rgba(0,0,0,0.68); */
+}
+
+.inputEmail {
+    width: 55vmin;
+    height: 6vmin;
+    background-color: transparent;
+    outline: none;
+    margin-left: 2vmin;
+    border-width: 0.1vmin;
+    border-color: lightgray;
+    border-radius: 2vmin;
+    border-style: solid;
+    box-shadow: 7px 3px 13px -7px;
+    font-size: 2.5vmin;
+    text-align: center;
+    color: gray;
+    margin-top: 1vmin;
+}
+
+.textFrom {
+    text-align: left;
+    width: 100%;
+    margin-left: 8vmin;
+}
+
+.btnIngresar {
+    font-size: 2.5vmin;
+    border: 2px solid;
+    transition: all 1s ease;
+    position: relative;
+    width: 27vmin;
+    border-radius: 15px;
+    height: 6vmin;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    /* background-color: white !important; */
+    /* background-image: linear-gradient(#179f5d, #009245); */
+    background: linear-gradient( 130deg, rgba(171, 17, 51, 1) 30%, rgba(255, 51, 102, 0.75)), linear-gradient(200deg, #ab1133 50%, #ff3366 50%);
+    color: #fff;
+    margin-top: 2vmin;
+    cursor: pointer;
+}
+
+.btnIngresar:hover {
+    background: linear-gradient( -130deg, rgba(171, 17, 51, 1) 30%, rgba(255, 51, 102, 0.75)), linear-gradient(-200deg, #ab1133 50%, #ff3366 50%);
+}
+
+.contentbtn {
+    width: 40%;
+}
+
+.contentbtnlogin {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2vmin;
+}

@@ -4,17 +4,20 @@ import { Account, DataAccount } from '../../models/Account';
 import React, { useEffect } from 'react';
 import { CardAccount } from '../../components/Card/';
 import { Link } from 'react-router-dom';
+import { sortAccount } from 'app/shared/services/sort-Account';
 
 interface AccountManagmentProps {
   accountLists: Account;
   accountList: () => void;
   saveAccount: (account: DataAccount) => void;
+  status: string;
 }
 
 export const AccountManagment: React.FC<AccountManagmentProps> = ({
   accountLists,
   accountList,
   saveAccount,
+  status,
 }) => {
   useEffect(() => {
     accountList();
@@ -24,7 +27,14 @@ export const AccountManagment: React.FC<AccountManagmentProps> = ({
     saveAccount(account);
   };
 
-  return (
+  // const sort2 = accountLists.cuentas.sort((a: DataAccount, b: DataAccount) => {
+  //   return a.valorDisponible - b.valorDisponible;
+  // });
+  // console.log(sort2);
+
+  return status !== 'ok' ? (
+    <></>
+  ) : (
     <div className="account">
       <h2 className="tittle-account">Mis Cuentas</h2>
       <div className="body-account">
@@ -60,4 +70,5 @@ AccountManagment.propTypes = {
   accountLists: PropTypes.any.isRequired,
   accountList: PropTypes.func.isRequired,
   saveAccount: PropTypes.func.isRequired,
+  status: PropTypes.string.isRequired,
 };

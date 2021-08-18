@@ -1,0 +1,120 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Data my account should match snapshot 1`] = `
+<div>
+  <div
+    class="data-account"
+  >
+    <div
+      class="contenet-account"
+    >
+      <h3
+        class="data-account-info"
+      >
+        Información
+      </h3>
+      <div
+        class="body-data-account"
+      >
+        <div
+          class="body-info-account"
+        >
+          <div
+            class="user-info-account"
+          >
+            <h5
+              class="tittle-data-account"
+            >
+              Nombre:
+            </h5>
+            <h5
+              class="name-account"
+            >
+              Juan Sebastian Sanchez Parada
+            </h5>
+          </div>
+          <div
+            class="user-info-account"
+          >
+            <h5
+              class="tittle-data-account"
+            >
+              Cedula:
+            </h5>
+            <h5
+              class="name-account"
+            >
+              123456789
+               
+            </h5>
+          </div>
+          <div
+            class="user-info-account"
+          >
+            <h5
+              class="tittle-data-account"
+            >
+              Cuenta:
+            </h5>
+            <h5
+              class="name-account"
+            >
+              111 111 111 111
+            </h5>
+          </div>
+          <div
+            class="user-info-account"
+          >
+            <h5
+              class="tittle-data-account"
+            >
+              Tipo de cuenta:
+            </h5>
+            <h5
+              class="name-account"
+            >
+              Cuenta de ahorros
+            </h5>
+          </div>
+          <div
+            class="user-info-account"
+          >
+            <h5
+              class="tittle-data-account"
+            >
+              Estado:
+            </h5>
+            <h5
+              class="name-account"
+            >
+              Activo
+            </h5>
+          </div>
+          <div
+            class="user-info-account"
+          >
+            <h5
+              class="tittle-data-account"
+            >
+              Valor disponible:
+            </h5>
+            <h5
+              class="name-account"
+            >
+              25000
+            </h5>
+          </div>
+        </div>
+        <div
+          class="body-describe-info"
+        >
+          <h3>
+            Transacciones 
+          </h3>
+          Cargando
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

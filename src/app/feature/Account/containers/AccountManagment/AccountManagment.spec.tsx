@@ -1,6 +1,5 @@
 import '@testing-library/jest-dom';
-import { RenderResult, fireEvent, render, wait } from '@testing-library/react';
-import { SinonStub, stub } from 'sinon';
+import { RenderResult, render } from '@testing-library/react';
 import { AccountManagment } from './';
 import React from 'react';
 
