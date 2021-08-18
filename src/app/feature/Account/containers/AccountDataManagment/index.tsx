@@ -1,8 +1,8 @@
 import './index.css';
 import { Account, DataAccount } from '../../models/Account';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 interface AccountDataManagmentProps {
   accountLists: Account;

@@ -77,4 +77,5 @@ LoginManagment.propTypes = {
   email: PropTypes.string.isRequired,
   pass: PropTypes.string.isRequired,
   saveStatusLogin: PropTypes.func.isRequired,
+  status: PropTypes.string.isRequired,
 };
