@@ -1,5 +1,4 @@
-import { combineReducers } from 'redux';
-import productos from './productos/productosReductor';
 import account from './account/accountReductor';
+import { combineReducers } from 'redux';
 
-export default combineReducers({ productos, account });
+export default combineReducers({ account });

@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import { Account, DataAccount } from '../../models/Account';
-import * as PropTypes from 'prop-types';
-import { CardAccount } from '../../components/Card/';
 import './index.css';
+import * as PropTypes from 'prop-types';
+import { Account, DataAccount } from '../../models/Account';
+import React, { useEffect } from 'react';
+import { CardAccount } from '../../components/Card/';
 import { Link } from 'react-router-dom';
 
 interface AccountManagmentProps {
@@ -31,13 +31,12 @@ export const AccountManagment: React.FC<AccountManagmentProps> = ({
         {accountLists.cuentas ? (
           <>
             {Object.values(accountLists.cuentas).map((account: any) => {
-              console.log(account);
-
               return (
                 <Link
                   to="/accounts/DataAccount"
                   className="buttom-card"
                   onClick={() => handleViewAccount(account)}
+                  key={account.cuentaId}
                 >
                   <CardAccount
                     cuentaId={account.cuentaId}
@@ -60,4 +59,5 @@ export const AccountManagment: React.FC<AccountManagmentProps> = ({
 AccountManagment.propTypes = {
   accountLists: PropTypes.any.isRequired,
   accountList: PropTypes.func.isRequired,
+  saveAccount: PropTypes.func.isRequired,
 };

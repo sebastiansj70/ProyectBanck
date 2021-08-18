@@ -1,7 +1,7 @@
-import PropTypes, { object } from 'prop-types';
-import React from 'react';
-import { Account, DataAccount } from '../../models/Account';
 import './index.css';
+import { Account, DataAccount } from '../../models/Account';
+import PropTypes from 'prop-types';
+import React from 'react';
 
 interface AccountDataManagmentProps {
   accountLists: Account;
@@ -23,7 +23,6 @@ export const AccountDataManagment: React.FC<AccountDataManagmentProps> = ({
   accountList,
   account,
 }) => {
-  console.log(accountLists);
 
   return (
     <div className="data-account">
@@ -68,10 +67,11 @@ export const AccountDataManagment: React.FC<AccountDataManagmentProps> = ({
               <>
                 {Object.keys(account.movimientos).length > 0 ? (
                   account.movimientos.map((transaccion: transaction) => {
-                    console.log(transaccion.descripcion);
-
                     return (
-                      <div className="transaction-account">
+                      <div
+                        className="transaction-account"
+                        key={transaccion.cuentaId}
+                      >
                         <div className="content-transaction">
                           <div className="user-info-account">
                             <h5 className="tittle-data-account">

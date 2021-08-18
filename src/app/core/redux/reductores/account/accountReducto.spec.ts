@@ -1,7 +1,7 @@
-import { EstadoAccount } from 'app/core/redux/modelo/EstadoAccount';
 import { Account, DataAccount } from 'app/feature/Account/models/Account';
-import { saveAccount } from 'app/core/redux/acciones/account/AccountActions';
+import { EstadoAccount } from 'app/core/redux/modelo/EstadoAccount';
 import accountReductor from './accountReductor';
+import { saveAccount } from 'app/core/redux/acciones/account/AccountActions';
 
 describe('Reductor Account', () => {
     it('Guardar cuenta seleccionada', () => {

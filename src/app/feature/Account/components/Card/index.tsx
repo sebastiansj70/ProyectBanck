@@ -1,5 +1,6 @@
-import React from 'react';
 import './index.css';
+import * as PropTypes from 'prop-types';
+import React from 'react';
 import chip from 'assets/img/chip.png';
 
 interface CardAccountProps {
@@ -30,4 +31,11 @@ export const CardAccount: React.FC<CardAccountProps> = ({
       </div>
     </div>
   );
+};
+
+CardAccount.propTypes = {
+  cuentaId: PropTypes.string.isRequired,
+  tipoCuenta: PropTypes.string.isRequired,
+  nombres: PropTypes.string.isRequired,
+  apellidos: PropTypes.string.isRequired,
 };

@@ -3,9 +3,9 @@ import {
     AccountActionTypes,
     SAVE_ACCOUNT
 } from './AccountActionTypes';
-import { Dispatch } from 'react';
-import { Account,DataAccount } from 'app/feature/Account/models/Account';
+import { Account, DataAccount } from 'app/feature/Account/models/Account';
 import { AccountRepository } from 'app/core/api/account.repositorio';
+import { Dispatch } from 'react';
 
 export function accountList(
     accountList: Account
@@ -20,7 +20,6 @@ export function accountListAsync() {
     return function (dispacth: Dispatch<AccountActionTypes>) {
         AccountRepository.consultarAccount()
             .then((respuesta) => (
-                console.log(respuesta),
                 dispacth(
                     accountList(respuesta.data)
                 )
