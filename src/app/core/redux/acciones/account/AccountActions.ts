@@ -1,11 +1,11 @@
 import {
-    AccountActionTypes,
     ACCOUNT_LIST,
+    AccountActionTypes,
     SAVE_ACCOUNT
-} from "./AccountActionTypes";
-import { Dispatch } from "react";
-import { Account,DataAccount } from "app/feature/Account/models/Account";
-import { AccountRepository } from "app/core/api/account.repositorio";
+} from './AccountActionTypes';
+import { Dispatch } from 'react';
+import { Account,DataAccount } from 'app/feature/Account/models/Account';
+import { AccountRepository } from 'app/core/api/account.repositorio';
 
 export function accountList(
     accountList: Account
@@ -25,8 +25,8 @@ export function accountListAsync() {
                     accountList(respuesta.data)
                 )
             )
-            )
-    }
+            );
+    };
 }
 
 export function saveAccount(

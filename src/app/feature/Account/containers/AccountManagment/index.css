@@ -1,6 +1,7 @@
 .body-account {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .buttom-card {

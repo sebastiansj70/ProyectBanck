@@ -1,5 +1,5 @@
 import { Account, DataAccount } from 'app/feature/Account/models/Account';
-import { AccountActionTypes, ACCOUNT_LIST, SAVE_ACCOUNT } from '../../acciones/account/AccountActionTypes';
+import { ACCOUNT_LIST, AccountActionTypes, SAVE_ACCOUNT } from '../../acciones/account/AccountActionTypes';
 import { EstadoAccount } from '../../modelo/EstadoAccount';
 
 const initialState: EstadoAccount = {
@@ -17,7 +17,7 @@ export default function (
             return {
                 ...state,
                 accountLists: action.payload
-            }
+            };
         }
         case SAVE_ACCOUNT: {
             console.log(typeof action.payload);
@@ -25,7 +25,7 @@ export default function (
             return {
                 ...state,
                 account: action.payload
-            }
+            };
         }
 
         default:

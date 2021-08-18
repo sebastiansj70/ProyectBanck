@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`My account should match snapshot 1`] = `
+<div>
+  <div
+    class="account"
+  >
+    <h2
+      class="tittle-account"
+    >
+      Mis Cuentas
+    </h2>
+    <div
+      class="body-account"
+    />
+  </div>
+</div>
+`;

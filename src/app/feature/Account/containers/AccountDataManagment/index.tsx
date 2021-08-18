@@ -12,6 +12,7 @@ interface AccountDataManagmentProps {
 interface transaction {
   id: number;
   cuentaId: string;
+  tipoCuenta: string;
   fechaTransaccion: number;
   montoTransaccion: number;
   descripcion: string;
@@ -78,6 +79,14 @@ export const AccountDataManagment: React.FC<AccountDataManagmentProps> = ({
                             </h5>
                             <h5 className="name-account">
                               {transaccion.cuentaId}
+                            </h5>
+                          </div>
+                          <div className="user-info-account">
+                            <h5 className="tittle-data-account">
+                              Tipo de cuenta:
+                            </h5>
+                            <h5 className="name-account">
+                              {transaccion.tipoCuenta}
                             </h5>
                           </div>
                           <div className="user-info-account">

@@ -26,7 +26,7 @@ export const CardAccount: React.FC<CardAccountProps> = ({
       </div>
       <div className="card-footer">
         <h5 className="account-name">{`${nombres} ${apellidos}`}</h5>
-        <h5 className="account-name">{`04/30`}</h5>
+        <h5 className="account-name">{'04/30'}</h5>
       </div>
     </div>
   );

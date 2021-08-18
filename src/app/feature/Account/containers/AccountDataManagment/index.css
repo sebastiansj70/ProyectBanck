@@ -4,7 +4,7 @@
 }
 
 .contenet-account {
-    width: 70vmin;
+    width: 80vmin;
     /* height: 50vmin; */
     justify-content: center;
     display: grid;
@@ -30,15 +30,17 @@
 
 .tittle-data-account {
     margin: 1vmin 0px 1vmin 1vmin;
+    font-size: 2.5vmin;
 }
 
 .name-account {
     margin: 1vmin;
     font-weight: 400;
+    font-size: 2.5vmin;
 }
 
 .body-describe-info {
-    width: 60vmin;
+    width: 75vmin;
     text-align: center;
     border-radius: 1vmin;
     border-width: 0.1vmin;
