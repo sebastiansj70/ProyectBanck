@@ -1,0 +1,18 @@
+.body-account {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.buttom-card {
+    cursor: pointer;
+    /* display: flex; */
+    width: 65vmin;
+    height: 30vmin;
+    margin: 2vmin;
+    text-decoration: none;
+    color: white;
+}
+
+.tittle-account {
+    text-align: center;
+}

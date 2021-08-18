@@ -1,0 +1,57 @@
+@import url(https://allfont.es/allfont.css?fonts=agency-fb-bold);
+.card-account {
+    width: 65vmin;
+    height: 30vmin;
+    border-width: 0.1vmin;
+    border-color: lightgray;
+    border-radius: 2vmin;
+    border-style: solid;
+    box-shadow: 0px 2px 15px -10px;
+    background: linear-gradient( 130deg, rgba(171, 17, 51, 1) 30%, rgba(255, 51, 102, 0.75)), linear-gradient(200deg, #ab1133 50%, #ff3366 50%);
+}
+
+.card-acount-chip {
+    width: 5vmin;
+    height: 5vmin;
+}
+
+.card-header {
+    width: 100%;
+    height: 33%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 3vmin 7vmin;
+    font-family: 'Agency FB Bold', arial;
+}
+
+.card-body {
+    width: 100%;
+    height: 33%;
+    display: grid;
+    padding: 2vmin;
+    font-family: 'Agency FB Bold', arial;
+}
+
+.card-footer {
+    width: 100%;
+    height: 33%;
+    padding: 3vmin 1vmin;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Agency FB Bold', arial;
+}
+
+.account-tipe,
+.account-id,
+.account-name {
+    margin: 0px;
+}
+
+.account-id {
+    font-size: 4vmin;
+}
+
+.account-tipe,
+.account-name {
+    font-size: 3vmin;
+}
