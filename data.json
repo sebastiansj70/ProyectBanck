@@ -1,0 +1,66 @@
+{
+    "cedula": "123456789",
+    "nombres": "Juan Sebastian",
+    "apellidos": "Sanchez Parada",
+    "cuentas": [{
+            "cuentaId": "1111 1111 1111 1111",
+            "tipoCuenta": "Cuenta de Ahorros",
+            "estado": 1,
+            "valorDisponible": 250000,
+            "movimientos": [{
+                    "id": 1,
+                    "cuentaId": "2222 2222 2222 2222",
+                    "tipoCuenta": "Cuenta Corriente",
+                    "fechaTransaccion": 1629254803679,
+                    "montoTransaccion": 100000,
+                    "descripcion": "pago por materiales"
+                },
+                {
+                    "id": 2,
+                    "cuentaId": "3333 3333 3333 3333",
+                    "tipoCuenta": "Visa Gold",
+                    "fechaTransaccion": 1629254803679,
+                    "montoTransaccion": 5000,
+                    "descripcion": "pago mensualidad"
+                }
+            ]
+        },
+        {
+            "cuentaId": "2222 2222 2222 2222",
+            "tipoCuenta": "Cuenta Corriente",
+            "estado": 1,
+            "valorDisponible": 500000,
+            "movimientos": [{
+                    "id": 1,
+                    "cuentaId": "1111 1111 1111 1111",
+                    "tipoCuenta": "Cuenta de Ahorros",
+                    "fechaTransaccion": 1629254803679,
+                    "montoTransaccion": 100000,
+                    "descripcion": "deuda"
+                },
+                {
+                    "id": 2,
+                    "cuentaId": "3333 3333 3333 3333",
+                    "tipoCuenta": "Visa Gold",
+                    "fechaTransaccion": 1629254803679,
+                    "montoTransaccion": 10000,
+                    "descripcion": "abono a pension"
+                }
+            ]
+        },
+        {
+            "cuentaId": "3333 3333 3333 3333",
+            "tipoCuenta": "Visa Gold",
+            "estado": 1,
+            "valorDisponible": 100000,
+            "movimientos": [{
+                "id": 1,
+                "cuentaId": "1111 1111 1111 1111",
+                "tipoCuenta": "Cuenta de Ahorros",
+                "fechaTransaccion": 1629254803679,
+                "montoTransaccion": 100000,
+                "descripcion": "gastos"
+            }]
+        }
+    ]
+}
