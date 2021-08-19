@@ -1,9 +1,9 @@
 import './index.css';
 import * as PropTypes from 'prop-types';
 import { Account, DataAccount } from '../../models/Account';
+import { Link, useHistory } from 'react-router-dom';
 import React, { useEffect } from 'react';
 import { CardAccount } from '../../components/Card/';
-import { Link } from 'react-router-dom';
 import { sortAccount } from 'app/shared/services/sort-Account';
 
 interface AccountManagmentProps {
@@ -23,6 +23,8 @@ export const AccountManagment: React.FC<AccountManagmentProps> = ({
     accountList();
   }, []);
 
+  const history = useHistory();
+
   const handleViewAccount = (account: DataAccount) => {
     saveAccount(account);
   };
@@ -33,7 +35,7 @@ export const AccountManagment: React.FC<AccountManagmentProps> = ({
   // console.log(sort2);
 
   return status !== 'ok' ? (
-    <></>
+    <>{history.push('/')}</>
   ) : (
     <div className="account">
       <h2 className="tittle-account">Mis Cuentas</h2>

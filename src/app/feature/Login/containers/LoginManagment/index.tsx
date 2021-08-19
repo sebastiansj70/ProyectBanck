@@ -1,8 +1,8 @@
 import './index.css';
 import * as PropTypes from 'prop-types';
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import logo from 'assets/img/logo.png';
+import { useHistory } from 'react-router-dom';
 
 interface LoginManagmentProps {
   email: string;
@@ -23,12 +23,16 @@ export const LoginManagment: React.FC<LoginManagmentProps> = ({
   const [emailUser, setEmailUser] = useState('');
   const [passwordUser, setPasswordUser] = useState('');
 
+  const history = useHistory();
+
   const handleLogin = () => {
     if (emailUser === email && passwordUser === pass) {
       setstatusLocal('ok');
       saveStatusLogin('ok');
+      history.push('/accounts');
     } else {
       saveStatusLogin('');
+      history.push('/');
     }
   };
 
@@ -60,12 +64,7 @@ export const LoginManagment: React.FC<LoginManagmentProps> = ({
         </div>
         <div className="contentbtnlogin">
           <div className="contentbtn" onClick={() => handleLogin()}>
-            <Link
-              to={statusLocal === 'ok' ? '/accounts' : '/'}
-              className="btnIngresar"
-            >
-              Ingresar
-            </Link>
+            <div className="btnIngresar">Ingresar</div>
           </div>
         </div>
       </div>

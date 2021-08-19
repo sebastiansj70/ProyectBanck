@@ -22,6 +22,8 @@ describe('Data my account', () => {
         valorDisponible: 25000,
         movimientos: [],
       },
+      status: 'ok',
+      saveStatusLogin: jest.fn(),
     };
 
     componenWrapper = render(<AccountDataManagment {...componentProps} />);

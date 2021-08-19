@@ -17,6 +17,7 @@ describe('My account', () => {
       },
       accountList: jest.fn(),
       saveAccount: jest.fn(),
+      status:'ok'
     };
 
     componenWrapper = render(<AccountManagment {...componentProps} />);
