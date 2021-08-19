@@ -28,3 +28,8 @@ npm run lint
 email: juan@example
 pass: 1234
 ```
+
+### response data example
+```
+data.json
+```
